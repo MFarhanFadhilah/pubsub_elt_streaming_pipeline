@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "core": {
+        "event_name": "page_view",
+        "event_timestamp": "1754001234567",
+        "pageview_id": "HomePage_1754001234567",
+        "event_id": "evt_987654",
+        "page_name": "Home Page",
+        "page_urlpath": "/home",
+        "previous_page": "landing",
+        "previous_page_urlpath": "/"
+      },
+      "user": {
+        "session_id": "SESSION_1754001234567_XYZ",
+        "user_id": "user_10001"
+      },
+      "application": {
+        "source_name": "apps_super",
+        "os_name": "Android",
+        "os_version": "14",
+        "os_timezone": "Asia/Jakarta",
+        "device_class": "phone",
+        "device_family": "pixel",
+        "app_version": "4.1.0",
+        "device_id": "DEVICE_ABC_001"
+      },
+      "network": {
+        "ip_address": "192.168.10.25",
+        "network_isp": "Telkomsel",
+        "country": "Indonesia",
+        "city": "Jakarta Selatan",
+        "zipcode": "12430",
+        "latitude": -6.260718,
+        "longitude": 106.781639
+      },
+      "marketing": {
+        "utm_raw": "utm_source=test&utm_medium=demo"
+      }
+    }
+  ]
+}

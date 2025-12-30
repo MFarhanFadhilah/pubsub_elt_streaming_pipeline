@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+
+PROJECT_ID=$1
+REGION=asia-southeast2
+SERVICE=gateway-demo
+TOPIC=demo-event-stream
+
+if [ -z "$PROJECT_ID" ]; then
+  echo "Usage: ./deploy.sh <PROJECT_ID>"
+  exit 1
+fi
+
+gcloud functions deploy $SERVICE \
+  --gen2 \
+  --runtime=go121 \
+  --region=$REGION \
+  --source=./gateway \
+  --entry-point=Handler \
+  --trigger-http \
+  --allow-unauthenticated \
+  --memory=256MB \
+  --timeout=60 \
+  --set-env-vars \
+    PROJECT_ID=$PROJECT_ID,\
+    TOPIC_NAME=$TOPIC,\
+    API_KEY=test123
