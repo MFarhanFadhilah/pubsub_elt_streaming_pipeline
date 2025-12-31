@@ -1,4 +1,4 @@
-module streaming_gateway
+module github.com/MFarhanFadhilah/pubsub_elt_streaming_pipeline/streaming_gateway
 
 go 1.25.5
 
