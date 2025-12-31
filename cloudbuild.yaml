@@ -8,7 +8,7 @@ steps:
       --gen2 \
       --runtime=go125 \
       --region=us-central1 \
-      --source=./pubsub_elt_streaming_pipeline \
+      --source=. \
       --entry-point=Handler \
       --trigger-http \
       --allow-unauthenticated \
