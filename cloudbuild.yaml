@@ -4,16 +4,17 @@ steps:
   args:
   - '-c'
   - |
-    gcloud functions deploy gateway-demo \
+    gcloud functions deploy streaming_gateway \
       --gen2 \
-      --runtime=go121 \
-      --region=asia-southeast2 \
-      --source=./gateway \
+      --runtime=go125 \
+      --region=us-central1 \
+      --source=./pubsub_elt_streaming_pipeline \
       --entry-point=Handler \
       --trigger-http \
       --allow-unauthenticated \
       --memory=256MB \
       --timeout=60 \
+      --quiet \
       --set-env-vars PROJECT_ID=personal-project-dev-482704,TOPIC_NAME=streming_event,API_KEY=test123
 options:
   logging: CLOUD_LOGGING_ONLY
