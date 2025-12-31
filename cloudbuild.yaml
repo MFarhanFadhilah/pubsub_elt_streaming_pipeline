@@ -15,3 +15,5 @@ steps:
       --memory=256MB \
       --timeout=60 \
       --set-env-vars PROJECT_ID=personal-project-dev-482704,TOPIC_NAME=streming_event,API_KEY=test123
+options:
+  logging: CLOUD_LOGGING_ONLY
