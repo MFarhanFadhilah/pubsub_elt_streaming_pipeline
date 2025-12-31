@@ -14,8 +14,8 @@ steps:
       --memory=256MB \
       --timeout=60 \
       --max-instances=1 \
-      --allow-unauthenticated \
-      --service-account=personal-project-dev-482704@appspot.gserviceaccount.com \
+      --no-allow-unauthenticated \
+      --service-account=sa-invoker-cf@personal-project-dev-482704.iam.gserviceaccount.com \
       --quiet \
       --set-env-vars PROJECT_ID=personal-project-dev-482704,TOPIC_NAME=streming_event,API_KEY=test123
 options:
