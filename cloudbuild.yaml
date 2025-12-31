@@ -14,4 +14,4 @@ steps:
       --allow-unauthenticated \
       --memory=256MB \
       --timeout=60 \
-      --set-env-vars PROJECT_ID=$PROJECT_ID,TOPIC_NAME=demo-event-stream,API_KEY=test123
+      --set-env-vars PROJECT_ID=personal-project-dev-482704,TOPIC_NAME=streming_event,API_KEY=test123
