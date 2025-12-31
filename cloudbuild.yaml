@@ -14,7 +14,7 @@ steps:
       --memory=256MB \
       --timeout=60 \
       --max-instances=1 \
-      --service-account=personal-project-dev-482704@appspot.gserviceaccount.com
+      --service-account=personal-project-dev-482704@appspot.gserviceaccount.com \
       --quiet \
       --set-env-vars PROJECT_ID=personal-project-dev-482704,TOPIC_NAME=streming_event,API_KEY=test123
 options:
